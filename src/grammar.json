@@ -95,6 +95,14 @@
       "members": [
         {
           "type": "SYMBOL",
+          "name": "block_comment"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "line_comment"
+        },
+        {
+          "type": "SYMBOL",
           "name": "value_declaration"
         },
         {
@@ -1362,6 +1370,14 @@
     "_expression_inner": {
       "type": "CHOICE",
       "members": [
+        {
+          "type": "SYMBOL",
+          "name": "line_comment"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "block_comment"
+        },
         {
           "type": "SYMBOL",
           "name": "const"
@@ -7383,14 +7399,6 @@
     }
   },
   "extras": [
-    {
-      "type": "SYMBOL",
-      "name": "block_comment"
-    },
-    {
-      "type": "SYMBOL",
-      "name": "line_comment"
-    },
     {
       "type": "PATTERN",
       "value": "[ \\s\\f\\uFEFF\\u2060\\u200B]|\\\\\\r?n"
